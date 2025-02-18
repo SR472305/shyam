@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            border: 1px solid black;
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            height: 100px;
+            width: 100px;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+        ul a {
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .search{
+            font-size: 25px;
+            display: flex;
+            height: 25px;
+            width: 100px;
+        }
+
+        .user{
+            display: flex;
+            flex-direction: column;
+            font-size: 35px;
+            align-items: center;
+        }
+
+        @media screen and (max-width:500px) {
+            .navbar{
+                /* position: absolute; */
+                top: 0px;
+                left: 0;
+                right: 0;
+                flex-direction: row;
+                display: flex;
+                align-items: center;
+
+            }
+
+           
+
+            /* .navbar{
+                /* position: absolute; */
+                /* top: 70px; 
+                display: flex;
+
+            } */    
+
+           
+
+            .navbar ul{
+                position: absolute;
+                top: 160px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar .search{
+                display: flex;
+                /* justify-content: space-around; */
+                align-items: center;
+                position: absolute;
+                top: 110px;
+                left: 130px;
+                
+            }
+              
+            .search input{
+                height: 30px;
+                width: 900px;
+
+
+            }
+        
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./images/learning.png" alt="">
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" value="search">
+        </div>
+
+        <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">course</a></li>
+            <li><a href="">contact us</a></li>
+        </ul>
+
+        <div class="user">
+            <i class="fa-solid fa-user"></i>
+            <button>login</button>
+        </div>
+    </nav>
+</body>
+
+</html>
