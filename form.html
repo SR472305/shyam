@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisation form</title>
+    <style>
+        body {
+            background-color: aqua;
+        }
+
+        h3 {
+            text-align: center;
+            border: 1px solid black;
+            height: 50px;
+            max-width:300px;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            padding-left: 112px;
+            padding-right: 118px;
+            margin-left: 550px;
+            margin-top: 0px;
+            background-color: black;
+            color: wheat;
+        }
+
+        form {
+            /* background-color: black; */
+            /* color: white; */
+            margin-left: 550px;
+            margin-bottom: 10px;
+        }
+
+        fieldset {
+            background-color: black;
+            color: white;
+            box-shadow: 10px 10px 10px 10px black;
+        }
+
+        label {
+            float: left;
+        }
+
+        span {
+            display: block;
+            overflow: hidden;
+            padding: 2px 0px 0px 6px;
+            /* display: flex; */
+            /* justify-content: left; */
+        }
+
+        input {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Attribute selectors</h3>
+
+    <form action="">
+        <fieldset style="max-width: min-content;">
+            <legend>Registration form</legend>
+
+            <label for="user">First Name</label>
+            <span>
+                <input type="text" id="user" placeholder="First Name"><br><br>
+            </span>
+            <!-- <input type="text" id="user"><br><br> -->
+
+            <label for="user">Last Name</label>
+            <!-- <input type="text" id="user"><br><br> -->
+             <span>
+            <input type="text" id="user" placeholder="Last Name"><br><br>
+             </span>
+
+            <label for="num">Contact no</label>
+            <!-- <input type="number" id="num"><br><br> -->
+             <span>
+            <input type="number" id="num" placeholder="Number"><br><br>
+             </span>
+
+            <label for="email">Email</label>
+            <!-- <input type="email" id="email"><br><br> -->
+             <span>
+            <input type="email" id="email" placeholder="Email"><br><br>
+             </span>
+
+            <label for="username">Username</label>
+            <!-- <input type="text" id="username"><br><br> -->
+             <span>
+            <input type="text" id="username" placeholder="Username"><br><br>
+             </span>
+
+            <label for="pass">Password</label>
+            <!-- <input type="password" id="pass"><br><br> -->
+             <span>
+            <input type="password" id="pass"><br><br>
+             </span>
+
+            <label for="conform">Comform Password</label>
+            <!-- <input type="password" id="conform"><br><br> -->
+             <span>
+            <input type="password" id="conform" placeholder="First Name"><br><br>
+             </span>
+
+            <input type="button" value="Submit" style="max-width: min-content;">
+
+            <input type="button" value="Reset" style="max-width: min-content;">
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
